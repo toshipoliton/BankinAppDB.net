@@ -19,7 +19,7 @@ namespace BankinAppDB.net
                 Console.Write("Enter a name for a your street: ");
                 var street = Console.ReadLine();
 
-                var person = new Person { Name = name, LastName = name, Age=44};
+                var person = new Person { Name = name, LastName = name, Age=44, Role="Customer"};
                 var address = new Address() { Street = street };
 
                 person.HomeAddress = address;

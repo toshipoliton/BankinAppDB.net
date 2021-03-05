@@ -24,6 +24,7 @@ namespace BankinAppDB.net
         public string LastName { get; set; }
 
         public int Age { get; set; }
+        public String Role { get; set; }
 
         public Address HomeAddress { get; set; }
 
