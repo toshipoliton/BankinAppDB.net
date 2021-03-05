@@ -52,8 +52,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Address.cs" />
     <Compile Include="CheckingsAccount.cs" />
     <Compile Include="BankingSystemContext.cs" />
+    <Compile Include="Migrations\202103051314091_Initial.cs" />
+    <Compile Include="Migrations\202103051314091_Initial.Designer.cs">
+      <DependentUpon>202103051314091_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103051316451_LastName.cs" />
+    <Compile Include="Migrations\202103051316451_LastName.Designer.cs">
+      <DependentUpon>202103051316451_LastName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103051325599_AddedAddressAndAge.cs" />
+    <Compile Include="Migrations\202103051325599_AddedAddressAndAge.Designer.cs">
+      <DependentUpon>202103051325599_AddedAddressAndAge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103051329498_AddedAddress.cs" />
+    <Compile Include="Migrations\202103051329498_AddedAddress.Designer.cs">
+      <DependentUpon>202103051329498_AddedAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -62,6 +80,20 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202103051314091_Initial.resx">
+      <DependentUpon>202103051314091_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103051316451_LastName.resx">
+      <DependentUpon>202103051316451_LastName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103051325599_AddedAddressAndAge.resx">
+      <DependentUpon>202103051325599_AddedAddressAndAge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103051329498_AddedAddress.resx">
+      <DependentUpon>202103051329498_AddedAddress.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

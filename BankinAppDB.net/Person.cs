@@ -21,6 +21,11 @@ namespace BankinAppDB.net
         [Required]
         [StringLength(350)]
         public string Name { get; set; }
+        public string LastName { get; set; }
+
+        public int Age { get; set; }
+
+        public Address HomeAddress { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CheckingsAccount> CheckingsAccounts { get; set; }

@@ -14,6 +14,7 @@ namespace BankinAppDB.net
 
         public virtual DbSet<CheckingsAccount> CheckingsAccounts { get; set; }
         public virtual DbSet<Person> People { get; set; }
+        public virtual DbSet<Address> Addresses { get; set; }
         public virtual DbSet<SavingsAccount> SavingsAccounts { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

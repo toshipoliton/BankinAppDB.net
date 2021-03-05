@@ -16,8 +16,16 @@ namespace BankinAppDB.net
                 Console.Write("Enter a name for a new BankAccount: ");
                 var name = Console.ReadLine();
 
-                var person = new Person { Name = name };
+                Console.Write("Enter a name for a your street: ");
+                var street = Console.ReadLine();
+
+                var person = new Person { Name = name, LastName = name, Age=44};
+                var address = new Address() { Street = street };
+
+                person.HomeAddress = address;
+
                 db.People.Add(person);
+
                 db.SaveChanges();
 
                 // Display all Blogs from the database
