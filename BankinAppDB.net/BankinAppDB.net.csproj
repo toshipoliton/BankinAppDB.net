@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Address.cs" />
+    <Compile Include="BirthDate.cs" />
     <Compile Include="CheckingsAccount.cs" />
     <Compile Include="BankingSystemContext.cs" />
     <Compile Include="Migrations\202103051314091_Initial.cs" />
@@ -74,6 +75,14 @@
     <Compile Include="Migrations\202103051401289_Role.cs" />
     <Compile Include="Migrations\202103051401289_Role.Designer.cs">
       <DependentUpon>202103051401289_Role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103051423306_AddedDateOfBirht.cs" />
+    <Compile Include="Migrations\202103051423306_AddedDateOfBirht.Designer.cs">
+      <DependentUpon>202103051423306_AddedDateOfBirht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103051434019_AddedDateOfBirth.cs" />
+    <Compile Include="Migrations\202103051434019_AddedDateOfBirth.Designer.cs">
+      <DependentUpon>202103051434019_AddedDateOfBirth.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Person.cs" />
@@ -100,6 +109,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103051401289_Role.resx">
       <DependentUpon>202103051401289_Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103051423306_AddedDateOfBirht.resx">
+      <DependentUpon>202103051423306_AddedDateOfBirht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103051434019_AddedDateOfBirth.resx">
+      <DependentUpon>202103051434019_AddedDateOfBirth.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

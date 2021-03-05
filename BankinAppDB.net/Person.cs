@@ -28,6 +28,8 @@ namespace BankinAppDB.net
 
         public Address HomeAddress { get; set; }
 
+        public DateTime DateOfBirth { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CheckingsAccount> CheckingsAccounts { get; set; }
 
