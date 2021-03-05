@@ -22,8 +22,7 @@ namespace BankinAppDB.net
                 //Console.Write("Enter your birth date: ");
                 //var birthdate = Console.ReadLine();
 
-                var person = new Person { Name = name, LastName = name, Age=44, Role="Customer", DateOfBirth=DateTime.Now};
-                var person = new Person { Name = name, LastName = name, Age=44, Role="Customer", Salary = 120};
+                var person = new Person { Name = name, LastName = name, Age=44, Role="Customer", Salary = 120, DateOfBirth=DateTime.Now};
                 var address = new Address() { Street = street };
                 person.HomeAddress = address;
 
