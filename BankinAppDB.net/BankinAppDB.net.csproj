@@ -75,6 +75,10 @@
     <Compile Include="Migrations\202103051401289_Role.Designer.cs">
       <DependentUpon>202103051401289_Role.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103051416401_Salary.cs" />
+    <Compile Include="Migrations\202103051416401_Salary.Designer.cs">
+      <DependentUpon>202103051416401_Salary.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
@@ -100,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103051401289_Role.resx">
       <DependentUpon>202103051401289_Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103051416401_Salary.resx">
+      <DependentUpon>202103051416401_Salary.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
