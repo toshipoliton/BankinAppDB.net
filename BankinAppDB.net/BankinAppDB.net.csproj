@@ -56,6 +56,11 @@
     <Compile Include="BirthDate.cs" />
     <Compile Include="CheckingsAccount.cs" />
     <Compile Include="BankingSystemContext.cs" />
+    <Compile Include="Migrations\202103081455180_AddedNationality.cs" />
+    <Compile Include="Migrations\202103081455180_AddedNationality.Designer.cs">
+      <DependentUpon>202103081455180_AddedNationality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nationality.cs" />
     <Compile Include="Migrations\202103051524378_Initial.cs" />
     <Compile Include="Migrations\202103051524378_Initial.Designer.cs">
       <DependentUpon>202103051524378_Initial.cs</DependentUpon>
@@ -73,6 +78,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202103051524378_Initial.resx">
       <DependentUpon>202103051524378_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103081455180_AddedNationality.resx">
+      <DependentUpon>202103081455180_AddedNationality.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

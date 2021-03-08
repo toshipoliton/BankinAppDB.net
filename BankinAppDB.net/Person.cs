@@ -30,6 +30,8 @@ namespace BankinAppDB.net
 
         public DateTime DateOfBirth { get; set; }
 
+        public String Nationality { get; set; }
+
         public int Salary { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

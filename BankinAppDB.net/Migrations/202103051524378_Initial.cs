@@ -67,15 +67,16 @@ namespace BankinAppDB.net.Migrations
         public override void Down()
         {
             DropForeignKey("dbo.SavingsAccount", "PersonId", "dbo.Person");
-            DropForeignKey("dbo.Person", "HomeAddress_id", "dbo.Addresses");
             DropForeignKey("dbo.CheckingsAccount", "PersonId", "dbo.Person");
+            DropForeignKey("dbo.Person", "HomeAddress_id", "dbo.Addresses");
             DropIndex("dbo.SavingsAccount", new[] { "PersonId" });
             DropIndex("dbo.Person", new[] { "HomeAddress_id" });
             DropIndex("dbo.CheckingsAccount", new[] { "PersonId" });
-            DropTable("dbo.SavingsAccount");
-            DropTable("dbo.Person");
+            DropTable("dbo.SavingsAccount");            
             DropTable("dbo.CheckingsAccount");
             DropTable("dbo.Addresses");
+            DropTable("dbo.Person");
+
         }
     }
 }
