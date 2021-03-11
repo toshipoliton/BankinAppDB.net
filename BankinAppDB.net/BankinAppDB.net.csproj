@@ -73,6 +73,14 @@
     <Compile Include="Migrations\202103112015054_AddressPlusName.Designer.cs">
       <DependentUpon>202103112015054_AddressPlusName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103112032169_AddedPostalCodeToAddress.cs" />
+    <Compile Include="Migrations\202103112032169_AddedPostalCodeToAddress.Designer.cs">
+      <DependentUpon>202103112032169_AddedPostalCodeToAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103112051000_AddedPostalCodeToAddressAndPerson.cs" />
+    <Compile Include="Migrations\202103112051000_AddedPostalCodeToAddressAndPerson.Designer.cs">
+      <DependentUpon>202103112051000_AddedPostalCodeToAddressAndPerson.cs</DependentUpon>
+    </Compile>
     <Compile Include="Nationality.cs" />
     <Compile Include="Migrations\202103051524378_Initial.cs" />
     <Compile Include="Migrations\202103051524378_Initial.Designer.cs">
@@ -103,6 +111,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103112015054_AddressPlusName.resx">
       <DependentUpon>202103112015054_AddressPlusName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103112032169_AddedPostalCodeToAddress.resx">
+      <DependentUpon>202103112032169_AddedPostalCodeToAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103112051000_AddedPostalCodeToAddressAndPerson.resx">
+      <DependentUpon>202103112051000_AddedPostalCodeToAddressAndPerson.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

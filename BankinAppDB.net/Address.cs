@@ -10,6 +10,7 @@ namespace BankinAppDB.net
     {
         public int id { get; set; }
 
+        public string Postalcode { get; set; }
         public string Name { get; set;  }
         public String Street { get; set; }
     }
