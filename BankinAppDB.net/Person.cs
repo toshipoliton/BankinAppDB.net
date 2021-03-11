@@ -36,6 +36,11 @@ namespace BankinAppDB.net
 
         public int Salary { get; set; }
 
+        public string Postalcode { get; set; }
+
+
+
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CheckingsAccount> CheckingsAccounts { get; set; }
 

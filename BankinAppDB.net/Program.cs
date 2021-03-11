@@ -19,20 +19,23 @@ namespace BankinAppDB.net
                 Console.Write("Enter a name for a your street: ");
                 var street = Console.ReadLine();
 
+                Console.Write("Enter your Postal Code: ");
+                var postcode = Console.ReadLine();
+
                 Console.Write("Enter your gender: ");
                 var sexe = Console.ReadLine();
 
                 //Console.Write("Enter your birth date: ");
                 //var birthdate = Console.ReadLine();
 
-                var person = new Person { Name = name, LastName = name, Age = 44, Role = "Customer", Salary = 120, DateOfBirth = DateTime.Now, Nationality = "nl" };
+                var person = new Person { Name = name, LastName = name, Age = 44, Role = "Customer", Salary = 120, DateOfBirth = DateTime.Now, Nationality = "nl", Postalcode = postcode };
                 var gender = new Gender() { GenderSexe = sexe, Name = name };
                 person.GenderSexe = gender;
                 
 
 
 
-                var address = new Address() { Street = street, Name= name };
+                var address = new Address() { Street = street, Name= name, Postalcode = postcode };
                 person.HomeAddress = address;
 
                 db.People.Add(person);
