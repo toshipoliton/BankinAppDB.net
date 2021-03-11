@@ -9,7 +9,8 @@ namespace BankinAppDB.net
     public class Gender
     {
         public int id { get; set; }
-
+        
+        public string Name { get; set; }
         public String GenderSexe { get; set; }
     }
 }

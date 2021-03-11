@@ -26,12 +26,13 @@ namespace BankinAppDB.net
                 //var birthdate = Console.ReadLine();
 
                 var person = new Person { Name = name, LastName = name, Age = 44, Role = "Customer", Salary = 120, DateOfBirth = DateTime.Now, Nationality = "nl" };
-                var gender = new Gender() { GenderSexe = sexe };
+                var gender = new Gender() { GenderSexe = sexe, Name = name };
                 person.GenderSexe = gender;
+                
 
 
 
-                var address = new Address() { Street = street };
+                var address = new Address() { Street = street, Name= name };
                 person.HomeAddress = address;
 
                 db.People.Add(person);

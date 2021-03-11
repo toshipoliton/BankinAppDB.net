@@ -65,6 +65,14 @@
     <Compile Include="Migrations\202103082122264_AddedGender.Designer.cs">
       <DependentUpon>202103082122264_AddedGender.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103112005301_GenderPlusName.cs" />
+    <Compile Include="Migrations\202103112005301_GenderPlusName.Designer.cs">
+      <DependentUpon>202103112005301_GenderPlusName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103112015054_AddressPlusName.cs" />
+    <Compile Include="Migrations\202103112015054_AddressPlusName.Designer.cs">
+      <DependentUpon>202103112015054_AddressPlusName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Nationality.cs" />
     <Compile Include="Migrations\202103051524378_Initial.cs" />
     <Compile Include="Migrations\202103051524378_Initial.Designer.cs">
@@ -89,6 +97,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103082122264_AddedGender.resx">
       <DependentUpon>202103082122264_AddedGender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103112005301_GenderPlusName.resx">
+      <DependentUpon>202103112005301_GenderPlusName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103112015054_AddressPlusName.resx">
+      <DependentUpon>202103112015054_AddressPlusName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
